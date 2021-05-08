@@ -1,1 +1,1 @@
-# section_jango
+# section_django
