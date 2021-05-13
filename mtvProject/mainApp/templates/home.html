@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          text-align: center;
+        }
+        .teamBox {
+          border: 2px solid black;
+          padding: 10px;
+          margin: 2%;
+          margin-left: 30%;
+          margin-right: 30%;
+        }
+        h1 {
+          background-color: rgb(212, 212, 212);
+        }
+      </style>
+    </head>
+    <body>
+      <h1>TEAM PROJECT</h1>
+      <div class="container">
+        {% for blog in blogs %} 
+        
+        <!-- 하지만 우리가 보고싶은 건 object 안에 담긴 cloumn  -->
+        <div class = "teamBox">
+	        <h3>{{blog.name}}</h3>
+	        <p>{{blog.age}}</p>
+	        <p>{{blog.major}}</p>
+          <p>{{blog.student_ID}}</p>
+          <p>{{blog.Birthday}}</p>
+          <p>{{blog.like_food}}</p>
+          <p>{{blog.hometown}}</p>
+          <p>{{blog.MBTI}}</p>
+          <p>{{blog.Hobby}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </body>
+</html>
+
